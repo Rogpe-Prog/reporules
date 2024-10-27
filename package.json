@@ -5,8 +5,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build",
-    "test": "lerna run test"
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "test": "lerna run test --stream",
+    "dev": "concurrently \"lerna run dev --stream\""
   },
   "dependencies": {},
   "devDependencies": {
