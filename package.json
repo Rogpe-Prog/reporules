@@ -10,8 +10,8 @@
     "test": "lerna run test --stream",
     "dev": "concurrently \"lerna run dev --stream\""
   },
-  "dependencies": {},
   "devDependencies": {
+    "concurrently": "^9.0.1",
     "lerna": "^8.1.8"
   }
 }
