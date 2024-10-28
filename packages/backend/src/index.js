@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Rule = require('./models/Rule'); // Importando o modelo
+const modelRule = require('./models/modelRule'); // Importando o modelo
 
 const app = express();
 app.use(express.json());
@@ -25,7 +25,7 @@ const ruleSchema = new mongoose.Schema({
     status: Boolean,
   }, { timestamps: true });
   
-  const Rule = mongoose.model('Rule', ruleSchema);
+  const Rule = mongoose.model('modelRule', ruleSchema);
 
 // Endpoint para criar uma nova regra
 app.post('/rules', async (req, res) => {
